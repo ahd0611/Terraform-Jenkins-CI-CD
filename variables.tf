@@ -19,3 +19,7 @@ variable "bucketname" {
   type        = string
   default     = "abdulahad-khan-cloud-2024"  #change Bucket name also
 }
+
+variable "subnet_id" {
+  default = "subnet-07f19a86032c93299"
+}
