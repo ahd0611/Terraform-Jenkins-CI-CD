@@ -3,6 +3,7 @@ resource "aws_instance" "Abdulahad" {
   instance_type          = var.instance_type
   key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
+  subnet_id = var.subnet_id
   user_data              = base64encode(file("website.sh"))
   tags = {
     Name = "Abdulahad-EC2"
